@@ -46,6 +46,17 @@ header i{
   font-size: 1vw;
 }
 
+.active{
+  background-color: var(--color-text1) !important;
+  color: white;
+  position: relative;
+  border-radius: 0px 5px 35px 0px;
+}
+
+.active svg{
+  color:white;
+}
+
 strong{
   font-family: 'Quicksand-Bold';
 }
@@ -121,9 +132,13 @@ input:focus-visible{
   overflow-y: scroll;
 }
 
+.cursor-pointer:hover{
+  background-color: rgba(200, 200, 200, 0.34);
+}
+
 /* Estilizando o scrollbar */
 ::-webkit-scrollbar {
-  width: 5px; /* Largura do scrollbar */
+  width: 3px; /* Largura do scrollbar */
 }
 
 /* Estilizando o thumb (a "alça" do scrollbar) */
