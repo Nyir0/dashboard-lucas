@@ -1,9 +1,9 @@
 import './App.css';
-import Header from './Template';
+import Template from './Template';
 
 function App() {
   return (
-    <Header />
+    <Template />
   );
 }
 

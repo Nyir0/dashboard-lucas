@@ -1,13 +1,10 @@
-function Header(){
+import Menu from "./components/Menu";
+
+function Template(){
     return(
-        <header>
+        <header class="fixed">
+            <Menu />
             <div className="flex justify-between items-center header-shadow">
-                <div className="flex items-center px-3 mr-5 py-3 text-m italic title-header w-[20vw] logo-shadow h-full">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" className="text-primary-600 transform rotate-180 mr-2 w-6 h-6 icon icon--feather"><path d="M9.59 4.59A2 2 0 1 1 11 8H2m10.59 11.41A2 2 0 1 0 14 16H2m15.73-8.27A2.5 2.5 0 1 1 19.5 12H2"></path></svg>
-                    <strong>
-                        Skewind
-                    </strong>
-                </div>
                 <nav className="flex items-center w-[55vw]">
                     {/* Icons de navegacao */}
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" className="icon icon--feather mx-2"><path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"></path><polyline points="13 2 13 9 20 9"></polyline></svg>
@@ -57,4 +54,4 @@ function Header(){
     )
 }
 
-export default Header;
+export default Template;

@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+:root{
+  --color-text1:rgb(100, 100, 192);
+}
+
 @font-face {
   font-family: 'Quicksand-light';
   src: url(../public/fonts/Quicksand-Light.ttf);
@@ -40,6 +44,10 @@ header i{
 
 .text-s{
   font-size: 1vw;
+}
+
+strong{
+  font-family: 'Quicksand-Bold';
 }
 
 .text-m{
@@ -102,4 +110,9 @@ input:focus-visible{
 
 .nav-shadow{
   box-shadow: -1px -1px 5px rgba(128, 128, 128, 0.688);
+}
+
+.menu{
+  background-color: rgba(200, 200, 200, 0.071);
+  box-shadow: -1px 6px 5px rgba(128, 128, 128, 0.688);
 }
