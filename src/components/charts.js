@@ -23,7 +23,7 @@ const diffdata = {
   new: dataNew,
 };
 
-export function App() {
+export function Grafico() {
   return (
     <Chart
       chartType="ColumnChart"
