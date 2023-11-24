@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 :root{
-  --color-text1:rgb(100, 100, 192);
+  --color-text1:rgb(70 100 174 / 89%);
 }
 
 @font-face {
@@ -47,14 +47,18 @@ header i{
 }
 
 .active{
-  background-color: var(--color-text1) !important;
+  background-image: linear-gradient(45deg, rgba(67, 93, 159, 0.89), rgba(67, 95, 166, 0.89), rgba(108, 146, 243, 0.89));
   color: white;
   position: relative;
-  border-radius: 0px 5px 35px 0px;
+  border-radius: 0px 5px 25px 0px;
 }
 
 .active svg{
   color:white;
+  background-color: rgba(132, 166, 254, 0.89);
+  border-radius: 0px 5px 13px 0px;
+  border-right: 2px solid rgb(198, 198, 198);
+  margin-right: 2vw;
 }
 
 strong{
@@ -73,7 +77,7 @@ header{
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: rgba(200, 200, 200, 0.071);
+  background-color: rgb(255 255 255 / 58%);
   width: 100%;
   box-shadow: 0 -2px 5px rgba(128, 128, 128, 0.688);
 }
@@ -124,15 +128,39 @@ input:focus-visible{
 }
 
 .menu{
-  background-color: rgba(200, 200, 200, 0.071);
+  background-color: rgb(255 255 255 / 58%);
   box-shadow: -1px 6px 5px rgba(128, 128, 128, 0.688);
+}
+
+.menu-unique svg{
+  transition: all 0.3s ease-in-out;
+}
+
+.menu-unique:not(.active):hover svg{
+    color: white;
+    background-color: rgb(163, 193, 254);
+    border-radius: 0px 5px 13px 0px;
+    border-right: 2px solid rgba(132, 166, 254, 0.89);
+    margin-right: 2vw;
+}
+
+.sub-menu svg{
+  transition: 0.3s ease-in-out;
+}
+
+.sub-menu:hover svg:not(.arrow){
+    color: white;
+    background-color: rgb(163, 193, 254);
+    border-radius: 0px 5px 13px 0px;
+    border-right: 2px solid rgba(132, 166, 254, 0.89);
+    margin-right: 2vw;
 }
 
 .menu:hover{
   overflow-y: scroll;
 }
 
-.cursor-pointer:hover{
+.header-icon:hover{
   background-color: rgba(200, 200, 200, 0.34);
 }
 
