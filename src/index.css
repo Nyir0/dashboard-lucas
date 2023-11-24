@@ -46,6 +46,17 @@ header i{
   font-size: 1vw;
 }
 
+.active{
+  background-color: var(--color-text1) !important;
+  color: white;
+  position: relative;
+  border-radius: 0px 5px 35px 0px;
+}
+
+.active svg{
+  color:white;
+}
+
 strong{
   font-family: 'Quicksand-Bold';
 }
@@ -115,4 +126,33 @@ input:focus-visible{
 .menu{
   background-color: rgba(200, 200, 200, 0.071);
   box-shadow: -1px 6px 5px rgba(128, 128, 128, 0.688);
+}
+
+.menu:hover{
+  overflow-y: scroll;
+}
+
+.cursor-pointer:hover{
+  background-color: rgba(200, 200, 200, 0.34);
+}
+
+/* Estilizando o scrollbar */
+::-webkit-scrollbar {
+  width: 3px; /* Largura do scrollbar */
+}
+
+/* Estilizando o thumb (a "alça" do scrollbar) */
+::-webkit-scrollbar-thumb {
+  background-color: rgba(128, 128, 128, 0.445); /* Cor de fundo do thumb */
+  border-radius: 10px; /* Raio da borda do thumb */
+}
+
+/* Estilizando a trilha (o "fundo" do scrollbar) */
+::-webkit-scrollbar-track {
+  background-color: #f1f1f1; /* Cor de fundo da trilha */
+}
+
+/* Estilizando a trilha quando o thumb estiver sobre ela */
+::-webkit-scrollbar-track:hover {
+  background-color: transparent; /* Cor de fundo da trilha quando o thumb está sobre ela */
 }
