@@ -213,3 +213,8 @@ div.in-menu span:hover{
 ::-webkit-scrollbar-track:hover {
   background-color: transparent; /* Cor de fundo da trilha quando o thumb está sobre ela */
 }
+.svg-title{
+  pointer-events: none;
+  opacity: 0;
+  transition: all 0.4s;
+}

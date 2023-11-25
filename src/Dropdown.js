@@ -8,44 +8,42 @@ $(document).ready(function(){
 
         if($(this).hasClass('active-menu') === false){
             if(submenu.css('height') === "0px"){
-                if($(".active-menu").length !== 0){
-                    $(".active-menu").find(".dropdown").css("height", "0px");
-                    $(".active-menu").find(".arrow").css("transform", "rotate(0deg)");
-                    $(".active-menu").removeClass('active-menu');
-                    $(this).addClass('active-menu');
-                    $(this).find("svg.arrow").css("transform", "rotate(90deg)");
-                    submenu.css('height', 'auto');
-                    $(".active-menu div, .active-menu div svg").on("click", function() {
-                        var $activeMenu = $(".active-menu");
-                        var $dropdown = $activeMenu.find(".dropdown");
-                        var $arrow = $activeMenu.find(".arrow");
-                    
-                        if ($dropdown.css("height") !== "0px") {
-                            $dropdown.css("height", "0px");
-                            $arrow.css("transform", "rotate(0deg)");
-                        } else {
-                            $dropdown.css("height", "auto");
-                            $arrow.css("transform", "rotate(90deg)");
-                        }
-                    });
-                }else{
-                    $(this).addClass('active-menu');
-                    $(this).find("svg.arrow").css("transform", "rotate(90deg)");
-                    submenu.css('height', 'auto');
-                    $(".active-menu div, .active-menu div svg").on("click", function() {
-                        var $activeMenu = $(".active-menu");
-                        var $dropdown = $activeMenu.find(".dropdown");
-                        var $arrow = $activeMenu.find(".arrow");
-                    
-                        if ($dropdown.css("height") !== "0px") {
-                            $dropdown.css("height", "0px");
-                            $arrow.css("transform", "rotate(0deg)");
-                        } else {
-                            $dropdown.css("height", "auto");
-                            $arrow.css("transform", "rotate(90deg)");
-                        }
-                    });
-                }
+                $(".active-menu").find(".dropdown").css("height", "0px");
+                $(".active-menu").find(".arrow").css("transform", "rotate(0deg)");
+                $(".active-menu").removeClass('active-menu');
+                $(this).addClass('active-menu');
+                $(this).find("svg.arrow").css("transform", "rotate(90deg)");
+                submenu.css('height', 'auto');
+                $(".active-menu div, .active-menu div span").on("click", function() {
+                    var $activeMenu = $(".active-menu");
+                    var $dropdown = $activeMenu.find(".dropdown");
+                    var $arrow = $activeMenu.find(".arrow");
+                
+                    if ($dropdown.css("height") !== "0px") {
+                        $dropdown.css("height", "0px");
+                        $arrow.css("transform", "rotate(0deg)");
+                    } else {
+                        $dropdown.css("height", "auto");
+                        $arrow.css("transform", "rotate(90deg)");
+                    }
+                });
+            }else{
+                $(this).addClass('active-menu');
+                $(this).find("svg.arrow").css("transform", "rotate(90deg)");
+                submenu.css('height', 'auto');
+                $(".active-menu div, .active-menu div span").on("click", function() {
+                    var $activeMenu = $(".active-menu");
+                    var $dropdown = $activeMenu.find(".dropdown");
+                    var $arrow = $activeMenu.find(".arrow");
+                
+                    if ($dropdown.css("height") !== "0px") {
+                        $dropdown.css("height", "0px");
+                        $arrow.css("transform", "rotate(0deg)");
+                    } else {
+                        $dropdown.css("height", "auto");
+                        $arrow.css("transform", "rotate(90deg)");
+                    }
+                });
             }
         }
     
@@ -63,6 +61,14 @@ $(document).ready(function(){
             $(this).find("svg.arrow2").css("transform", "rotate(0deg)");
         }
     
+    });
+    
+    $(".file-hover").mouseenter(function () {
+        console.log(this); 
+        $(this).find("span.svg-title").css("opacity","1");
+    });
+    $(".file-hover").mouseleave(function () { 
+        $(this).find("span.svg-title").css("opacity","0");
     });
 
 })
