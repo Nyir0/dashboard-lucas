@@ -12,15 +12,15 @@ function Template(){
                         <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" className="icon icon--feather mx-2 hover:bg-slate-200 rounded-md p-1 header-icon"><path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"></path><polyline points="13 2 13 9 20 9"></polyline></svg>
                         <span className="p-2 bg-slate-300 text-s absolute text-center w-28 -left-8 rounded-2xl svg-title">File Manager</span>
                     </div>
-                    <div class="relative file-hover">
+                    <div className="relative file-hover">
                         <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" className="icon icon--feather mx-2 hover:bg-slate-200 rounded-md p-1 header-icon"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
                         <span className="p-2 bg-slate-300 text-s absolute text-center w-28 -left-8 rounded-2xl svg-title">Chat</span>
                     </div>
-                    <div class="relative file-hover">
+                    <div className="relative file-hover">
                         <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" className="icon icon--feather mx-2 hover:bg-slate-200 rounded-md p-1 header-icon"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
                         <span className="p-2 bg-slate-300 text-s absolute text-center w-28 -left-8 rounded-2xl svg-title">Email</span>
                     </div>
-                    <div class="relative file-hover">
+                    <div className="relative file-hover">
                         <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" className="icon icon--feather mx-2 hover:bg-slate-200 rounded-md p-1 header-icon"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
                         <span className="p-2 bg-slate-300 text-s absolute text-center w-28 -left-8 rounded-2xl svg-title">Contacts</span>
                     </div>
@@ -73,7 +73,7 @@ function Template(){
                         <div id="alert-messages" className="py-2 bg-white px-4 text-s absolute text-center w-[40vw] h-[25rem] right-4 top-8 rounded-md language-select z-[200] overflow-y-auto hidden">
                             <div className="flex justify-between border-b-[1px]">
                                 <span>MESSAGES</span>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" class="icon icon--heroiconsOutline"><path stroke-linecap="round" stroke-linejoin="round" d="M5 12h.01M12 12h.01M19 12h.01M6 12a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0z"></path></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" className="icon icon--heroiconsOutline"><path stroke-linecap="round" stroke-linejoin="round" d="M5 12h.01M12 12h.01M19 12h.01M6 12a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0z"></path></svg>
                             </div>
                             <ul>
                                 <li className="flex items-center py-2 border-b-[1px]">
@@ -136,7 +136,7 @@ function Template(){
                         <div id="alert-notific" className="py-2 bg-white px-4 text-s absolute text-center w-[40vw] h-[25rem] right-4 top-8 rounded-md language-select z-[200] overflow-y-auto hidden">
                             <div className="flex justify-between border-b-[1px] py-2">
                                 <span>Notifications</span>
-                                <span class="text-blue-400 font-bold">MARK ALL AS READ</span>
+                                <span className="text-blue-400 font-bold">MARK ALL AS READ</span>
                             </div>
                             <ul>
                                 <li className="flex flex-col items-start py-2">
