@@ -19,13 +19,9 @@ $(document).ready(function(){
                     var $dropdown = $activeMenu.find(".dropdown");
                     var $arrow = $activeMenu.find(".arrow");
                 
-                    if ($dropdown.css("height") !== "0px") {
-                        $dropdown.css("height", "0px");
-                        $arrow.css("transform", "rotate(0deg)");
-                    } else {
-                        $dropdown.css("height", "auto");
-                        $arrow.css("transform", "rotate(90deg)");
-                    }
+                    $dropdown.css("height", "auto");
+                    $arrow.css("transform", "rotate(90deg)");
+                    
                 });
             }else{
                 $(this).addClass('active-menu');
