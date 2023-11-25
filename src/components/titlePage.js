@@ -1,3 +1,8 @@
+
+
+import { Grafico } from './charts';
+import { Table } from './table';
+
 export function Hello(){
     return(
         <>
@@ -43,6 +48,8 @@ export function Hello(){
                             </span>
                         </a>
                     </div>
+                    
+                    <Grafico/>
                 </div>
                 <div className="md:flex xl:flex-col md:space-x-8 xl:space-x-0 space-y-8 md:space-y-0 xl:space-y-8 order-3 xl:order-none col-span-6 xl:col-span-1">                               
                     <div className="bg-gradient-to-br from-primary-600 to-primary-400 shadow rounded flex md:flex-col xl:flex-row md:w-1/2 xl:w-full md:gap-10 xl:relative">
@@ -117,7 +124,10 @@ export function Hello(){
                         </div>
                     </div>
                 </div>
+                <Table/>
+                
             </div>
+            
         </>
     );
 };
