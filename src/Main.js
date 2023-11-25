@@ -1,6 +1,7 @@
 
 import { Hello } from './components/titlePage';
 import TryNow from './components/TryNow';
+import Dounts from './components/chartsDounts';
 
 function  Main(){
 
@@ -8,6 +9,7 @@ function  Main(){
         <main className='pl-[22vw] pt-[12vh]'>
             <Hello/>  
             <TryNow />              
+            <Dounts/>
         </main>
     );
 }
