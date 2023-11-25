@@ -53,7 +53,7 @@ export function Hello(){
                         </div>
                         <img src="img/girl-charts.svg" alt="" />
                     </div>
-                    <section className='shadow-[0_5px_20px_5px_rgba(0,0,0,0.3)] w-[97%] mx-2 rounded-xl'>
+                    <section className='shadow-[0_5px_20px_5px_rgba(0,0,0,0.3)] w-[97%] mx-2 rounded-3xl'>
                         <Grafico/>
                     </section>
                     <Table/>

@@ -1,9 +1,10 @@
 import React from "react";
 import { tablePeople } from "../data/tablePeople";
+import "./table.css";
 
 export function Table(){
     return (
-        <div className="col-span-6 xl:col-span-2 card p-4">
+        <div className="col-span-6 xl:col-span-2 card px-4 py-8">
             <div className="card__header">
                 <h3 className="text-2xl">Recent Orders</h3>
             </div>
@@ -30,7 +31,7 @@ export function Table(){
                                                     <td>
                                                         <a href="#" className="flex items-center hover:text-primary-500 min-w-[125px]">
                                                             <span className="avatar w-8 h-8 mr-3">
-                                                                <img src="{person.productImg}" alt="{person.peopleName}" className="avatar__object"/>                                                
+                                                                <img src={person.productImg} alt={person.peopleName} className="avatar__object"/>                                                
                                                             </span>
                                                             <span className="flex flex-col">
                                                                 <span className="line-clamp-1 text-sm">{person.productName}</span>
@@ -41,7 +42,7 @@ export function Table(){
                                                     <td>
                                                         <a href="#" className="flex items-center hover:text-primary-500 min-w-[150px]">
                                                             <span className="avatar w-8 h-8 mr-3">
-                                                                <img src="{person.peopleImg}" alt="{person.peopleImg}" className="avatar__object"/>
+                                                                <img src={person.peopleImg} alt="{person.peopleImg}" className="avatar__object"/>
                                                             </span>
                                                             <span className="flex flex-col">
                                                                 <span className="line-clamp-1 text-sm">{person.peopleName}</span>
@@ -50,11 +51,11 @@ export function Table(){
                                                         </a>
                                                     </td>
                                                     <td>
-                                                        <span className="badge scheme-green">{person.st}</span>
+                                                        <span className={person.stColor} >{person.st}</span>
                                                     </td>
                                                     <td className="text-xl">{person.amount}</td>
                                                 </tr>
-                                            )};
+                                            )}
                                         </tbody>
                                     </table>
                                 </div>
