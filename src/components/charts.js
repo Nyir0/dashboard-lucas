@@ -24,7 +24,7 @@ export function Grafico() {
   return (
     <Chart
       chartType="ColumnChart"
-      width="100%"
+      width="85%"
       height="300px"
       diffdata={diffdata}
     />

@@ -70,7 +70,7 @@ function Template(){
                                 2
                             </span>
                         </div>
-                        <div id="alert-messages" className="py-2 bg-white px-4 text-s absolute text-center w-[40vw] h-[25rem] right-4 top-8 rounded-md language-select z-[200] overflow-y-auto">
+                        <div id="alert-messages" className="py-2 bg-white px-4 text-s absolute text-center w-[40vw] h-[25rem] right-4 top-8 rounded-md language-select z-[200] overflow-y-auto hidden">
                             <div className="flex justify-between border-b-[1px]">
                                 <span>MESSAGES</span>
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" class="icon icon--heroiconsOutline"><path stroke-linecap="round" stroke-linejoin="round" d="M5 12h.01M12 12h.01M19 12h.01M6 12a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0z"></path></svg>
@@ -133,7 +133,7 @@ function Template(){
                         <span className="p-1 rounded-full bg-red-600 px-2 text-xs text-white absolute -top-2 -right-3">
                             3
                         </span>
-                        <div id="alert-notific" className="py-2 bg-white px-4 text-s absolute text-center w-[40vw] h-[25rem] right-4 top-8 rounded-md language-select z-[200] overflow-y-auto">
+                        <div id="alert-notific" className="py-2 bg-white px-4 text-s absolute text-center w-[40vw] h-[25rem] right-4 top-8 rounded-md language-select z-[200] overflow-y-auto hidden">
                             <div className="flex justify-between border-b-[1px] py-2">
                                 <span>Notifications</span>
                                 <span class="text-blue-400 font-bold">MARK ALL AS READ</span>
