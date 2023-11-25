@@ -130,7 +130,7 @@ function Template(){
                     {/* Alerta */}
                     <section id="notific" className="relative cursor-pointer">
                         <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" className="icon icon--feather"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path><path d="M13.73 21a2 2 0 0 1-3.46 0"></path></svg>
-                        <span className="p-1 rounded-full bg-red-600 px-2 text-xs text-white absolute -top-2 -right-3">
+                        <span className="p-1 rounded-full bg-red-600 px-2 text-xs text-white absolute -top-3 -right-3">
                             3
                         </span>
                         <div id="alert-notific" className="py-2 bg-white px-4 text-s absolute text-center w-[40vw] h-[25rem] right-4 top-8 rounded-md language-select z-[200] overflow-y-auto hidden">

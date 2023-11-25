@@ -225,3 +225,13 @@ div.in-menu span:hover{
   opacity: 0;
   transition: all 0.4s;
 }
+
+.banner-tryNow{
+  background-image: linear-gradient(#6183cc, #6183cc, #758fc6, #758fc6);
+}
+
+.card{
+  box-shadow: 1px 1px 5px gray;
+  margin-top: 0px !important;
+  margin-bottom: 0px !important;
+}
