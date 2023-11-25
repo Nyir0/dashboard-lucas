@@ -12,6 +12,8 @@ export function Hello(){
                     <div className="ml-5">
                         <div className="text-3xl">Good morning, Marla</div>
                         <div className="text-xl text-gray-500">Here's what's happening at the store today.</div>
+                        <img src="img/girl-charts.svg" alt="" />
+                        <img src="img/man-chart.svg" alt="" />
                     </div>
                     <div className="flex flex-wrap md:justify-around gap-8 mt-10 mr-72 ml-5">
                         <a href="#" className="flex space-x-3 transform transition-transform hover:scale-105">

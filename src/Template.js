@@ -1,11 +1,12 @@
 import Menu from "./components/Menu";
+import "./SearchEffect";
 
 function Template(){
     return(
         <header className="fixed">
             <Menu />
             <div className="flex justify-between items-center header-shadow">
-                <nav className="flex items-start w-[55vw] pt-3">
+                <nav className="flex items-start w-[55vw] py-1 relative">
                     {/* Icons de navegacao */}
                     <div className="relative file-hover">
                         <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" className="icon icon--feather mx-2 hover:bg-slate-200 rounded-md p-1 header-icon"><path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"></path><polyline points="13 2 13 9 20 9"></polyline></svg>

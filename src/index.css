@@ -77,9 +77,10 @@ header{
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: rgb(255 255 255 / 58%);
+  background-color: rgba(255, 255, 255, 0.785);
   width: 100%;
   box-shadow: 0 -2px 5px rgba(128, 128, 128, 0.688);
+  z-index: 100;
 }
 
 @media screen and (max-width: 1197px) {
@@ -108,7 +109,9 @@ nav svg{
   border: 1px solid rgb(128 135 145 / 30%);
   padding: 7px 3px;
   border-radius: 5px;
-  background-color: rgba(200, 200, 200, 0.071);
+  background-color: rgb(255, 255, 255);
+  z-index: 100;
+  transition: all 0.3s ease-in-out;
 }
 
 .search input{
