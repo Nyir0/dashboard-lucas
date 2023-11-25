@@ -196,6 +196,10 @@ div.in-menu span:hover{
   border-left: 1px solid var(--color-text1);
 }
 
+.language-select{
+  box-shadow: 1px 1px 5px gray;
+}
+
 /* Estilizando o scrollbar */
 ::-webkit-scrollbar {
   width: 3px; /* Largura do scrollbar */

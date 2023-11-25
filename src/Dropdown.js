@@ -63,8 +63,40 @@ $(document).ready(function(){
         console.log(this); 
         $(this).find("span.svg-title").css("opacity","1");
     });
+    
     $(".file-hover").mouseleave(function () { 
         $(this).find("span.svg-title").css("opacity","0");
     });
 
+    $("#language").on("click", function(){
+        $("#language div").show("fast");
+    })
+
+    $("#messages").on("click", function(){
+        $("#alert-messages").show("fast");
+    })
+
+    $("#notific").on("click", function(){
+        $("#alert-notific").show("fast");
+    })
+
 })
+
+$(document).on('click', function(e) {
+    var element1 = $('#language');
+    var element2 = $('#messages');
+    var element3 = $('#notific');
+
+    // Verifica se o clique ocorreu fora do elemento específico
+    if (!element1.is(e.target) && element1.has(e.target).length === 0) {
+        $("#language div").hide("fast");
+    }
+
+    if (!element2.is(e.target) && element2.has(e.target).length === 0) {
+        $("#alert-messages").hide("fast");
+    }
+
+    if (!element3.is(e.target) && element3.has(e.target).length === 0) {
+        $("#alert-notific").hide("fast");
+    }
+});

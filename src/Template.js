@@ -6,7 +6,7 @@ function Template(){
         <header className="fixed">
             <Menu />
             <div className="flex justify-between items-center header-shadow">
-                <nav className="flex items-start w-[55vw] py-1 relative">
+                <nav className="flex items-center w-[55vw] py-1 relative">
                     {/* Icons de navegacao */}
                     <div className="relative file-hover">
                         <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" className="icon icon--feather mx-2 hover:bg-slate-200 rounded-md p-1 header-icon"><path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"></path><polyline points="13 2 13 9 20 9"></polyline></svg>
@@ -39,20 +39,146 @@ function Template(){
                 </nav>
                 {/* Bandeira de lingugagem */}
                 <section className="flex items-center">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 512 512" className="cursor-pointer icon icon--flag w-14"><g fillRule="evenodd"><g strokeWidth="1pt"><path fill="#bd3d44" d="M0 0h972.8v39.4H0zm0 78.8h972.8v39.4H0zm0 78.7h972.8V197H0zm0 78.8h972.8v39.4H0zm0 78.8h972.8v39.4H0zm0 78.7h972.8v39.4H0zm0 78.8h972.8V512H0z"></path><path fill="#fff" d="M0 39.4h972.8v39.4H0zm0 78.8h972.8v39.3H0zm0 78.7h972.8v39.4H0zm0 78.8h972.8V315H0zm0 78.8h972.8v39.3H0zm0 78.7h972.8v39.4H0z"></path></g><path fill="#192f5d" d="M0 0h389.1v275.7H0z"></path><path fill="#fff" d="m32.3 11.8 4 11h11l-9.1 6.7 3.5 10.7-9.4-6.7-8.7 6.7 3.6-10.7-9.5-6.7h11.8zm65 0 3.5 11h11.4l-9.4 6.7 4 10.7-9.5-6.7-9.5 6.7 4-10.7-9.5-6.7h11.4zm65 0 3.5 11h11.4l-9.4 6.7 4 10.7-9.5-6.7-9.5 6.7 4-10.7-9.5-6.7h11.4zm64.6 0 3.9 11h11l-9 6.7 3.5 10.7-9.4-6.7-9.1 6.7 3.5-10.7-9.4-6.7h11.8zm65 0 3.5 11h11.4l-9.4 6.7 3.9 10.7-9.9-6.7-9 6.7 3.5-10.7-9.4-6.7h11.4zm65 0 3.5 11h11.4l-9.5 6.7 4 10.7-9.5-6.7-9.4 6.7 4-10.7-9.5-6.7h11.4zm-292 27.6 3.6 11H80l-9.5 6.7 4 10.6L65 61l-9.5 6.7 4-10.6-9.5-6.7h11.4zm64.7 0 4 11h11l-9.1 6.7 3.5 10.6-9.4-6.7-9 6.7 3.5-10.6-9.5-6.7h11.8zm65 0 3.5 11h11.4l-9.4 6.7 4 10.6-9.5-6.7-9.5 6.7 4-10.6-9.5-6.7H191zm65 0 3.5 11h11.4l-9.4 6.7 3.9 10.6-9.5-6.7-9.4 6.7 4-10.6-9.5-6.7H256zm64.5 0 4 11h10.6l-9 6.7 3.5 10.6-9.5-6.7-9 6.7 3.5-10.6-9.4-6.7h11.8zM32.7 67l3.1 11h11.9l-9.5 6.7 3.5 10.6-9.4-6.7-8.7 6.7 3.6-10.6-9.5-6.7h11.8zm64.6 0 3.5 11h11.4l-9 6.7 3.5 10.6-9.4-6.7-9 6.7 3.5-10.6-9.5-6.7h11.4zm65 0 3.5 11h11.4l-9.4 6.7 4 10.6-9.5-6.7-9.5 6.7 4-10.6-9.5-6.7h11.4zm64.6 0 3.9 11h11l-9 6.7 3.5 10.6-9.4-6.7-9.1 6.7 3.5-10.6L212 78h11.8zm65 0 3.5 11h11.4l-9 6.7 3.5 10.6-9.5-6.7-9 6.7 3.5-10.6L277 78h11.4zm65 0 3.5 11h11.4l-9.5 6.7 4 10.6-9.5-6.7-9.4 6.7 4-10.6-9.5-6.7h11.4zm-292 27.5 3.6 11H80l-9.5 6.7 4 10.7-9.5-6.7-9.5 6.7 4-10.7-9.5-6.6h11.4zm64.7 0 4 11h11l-9.1 6.7L139 123l-9.4-6.7-9 6.7 3.5-10.7-9.5-6.6h11.8zm65 0 3.5 11h11.4l-9 6.7L204 123l-9.4-6.7-9.1 6.7 3.5-10.7-9.4-6.6H191zm65 0 3.5 11h11.4l-9.4 6.7L269 123l-9.5-6.7-9.4 6.7 4-10.7-9.5-6.6H256zm64.5 0 4 11h10.6l-9 6.7 3.5 10.7-9.5-6.7-9 6.7 3.5-10.7-9.4-6.6h11.8zM32.7 122.1l3.1 11h11.9l-9.5 6.7 3.5 10.7-9.4-6.7-8.7 6.7 3.6-10.7-9.5-6.7h11.8zm64.6 0 3.5 11h11.4l-9 6.7 3.5 10.7-9.4-6.7-9 6.7 3.5-10.7-9.5-6.7h11.4zm65 0 3.5 11h11.4l-9.4 6.7 4 10.7-9.5-6.7-9.5 6.7 4-10.7-9.5-6.7h11.4zm64.6 0 3.9 11h11l-9 6.7 3.5 10.7-9.4-6.7-9.1 6.7 3.5-10.7-9.4-6.7h11.8zm65 0 3.5 11h11.4l-9 6.7 3.5 10.7-9.5-6.7-9 6.7 3.5-10.7-9.4-6.7h11.4zm65 0 3.5 11h11.4l-9.5 6.7 4 10.7-9.5-6.7-9.4 6.7 4-10.7-9.5-6.7h11.4zm-292 27.6 3.6 11H80l-9.5 6.7 4 10.6-9.5-6.7-9.5 6.7 4-10.6-9.5-6.7h11.4zm64.7 0 4 11h11l-9.1 6.7L139 178l-9.4-6.7-9 6.7 3.5-10.6-9.5-6.7h11.8zm65 0 3.5 11h11.4l-9 6.7L204 178l-9.4-6.7-9.1 6.7 3.5-10.6-9.4-6.7H191zm65 0 3.5 11h11.4l-9.4 6.7L269 178l-9.5-6.7-9.4 6.7 4-10.6-9.5-6.7H256zm64.5 0 4 11h10.6l-9 6.7 3.5 10.6-9.5-6.7-9 6.7 3.5-10.6-9.4-6.7h11.8zM32.7 177.2l3.1 11h11.9l-9.5 6.8 3.5 10.6-9.4-6.7-8.7 6.7 3.6-10.6-9.5-6.7h11.8zm64.6 0 3.5 11h11.4l-9 6.8 3.5 10.6-9.4-6.7-9 6.7 3.5-10.6-9.5-6.7h11.4zm65 0 3.5 11h11.4l-9.4 6.8 4 10.6-9.5-6.7-9.5 6.7 4-10.6-9.5-6.7h11.4zm64.6 0 3.9 11h11l-9 6.8 3.5 10.6-9.4-6.7-9.1 6.7 3.5-10.6-9.4-6.7h11.8zm65 0 3.5 11h11.4l-9 6.8 3.5 10.6-9.5-6.7-9 6.7 3.5-10.6-9.4-6.7h11.4zm65 0 3.5 11h11.4l-9.5 6.8 4 10.6-9.5-6.7-9.4 6.7 4-10.6-9.5-6.7h11.4zm-292 27.6 3.6 11H80l-9.5 6.7 4 10.7-9.5-6.7-9.5 6.7 4-10.7-9.5-6.7h11.4zm64.7 0 4 11h11l-9.1 6.7 3.5 10.7-9.4-6.7-9 6.7 3.5-10.7-9.5-6.7h11.8zm65 0 3.5 11h11.4l-9 6.7 3.5 10.7-9.4-6.7-9.1 6.7 3.5-10.7-9.4-6.7H191zm65 0 3.5 11h11.4l-9.4 6.7 3.9 10.7-9.5-6.7-9.4 6.7 4-10.7-9.5-6.7H256zm64.5 0 4 11h10.6l-9 6.7 3.5 10.7-9.5-6.7-9 6.7 3.5-10.7-9.4-6.7h11.8zM32.7 232.4l3.1 11h11.9l-9.5 6.7 3.5 10.6-9.4-6.7-8.7 6.7 3.6-10.6-9.5-6.7h11.8zm64.6 0 3.5 11h11.4l-9 6.7 3.5 10.6-9.4-6.7-9 6.7 3.5-10.6-9.5-6.7h11.4zm65 0 3.5 11h11.4l-9.4 6.7 4 10.6-9.5-6.7-9.5 6.7 4-10.6-9.5-6.7h11.4zm64.6 0 3.9 11h11l-9 6.7 3.5 10.6-9.4-6.7-9.1 6.7 3.5-10.6-9.4-6.7h11.8zm65 0 3.5 11h11.4l-9 6.7 3.5 10.6-9.5-6.7-9 6.7 3.5-10.6-9.4-6.7h11.4zm65 0 3.5 11h11.4l-9.5 6.7 4 10.6-9.5-6.7-9.4 6.7 4-10.6-9.5-6.7h11.4z"></path></g></svg>
+                    <div id="language" className="relative cursor-pointer">
+                        <img src="flags/eua.svg" alt="" />
+                        <div className="py-2 bg-white px-4 text-s absolute text-center w-36 -left-8 top-8 rounded-md language-select hidden">
+                            <ul>
+                                <li className="flex items-center py-2">
+                                    <img src="flags/eua.svg" alt="" />
+                                    <span className="pl-2">English</span>
+                                </li>
+                                <li className="flex items-center py-2">
+                                    <img src="flags/french.svg" alt="" />
+                                    <span className="pl-2">French</span>
+                                </li>
+                                <li className="flex items-center py-2">
+                                    <img src="flags/german.svg" alt="" />
+                                    <span className="pl-2">German</span>
+                                </li>
+                                <li className="flex items-center py-2">
+                                    <img src="flags/indonesi.svg" alt="" />
+                                    <span className="pl-2">Indonesia</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                     {/* Notificacao */}
-                    <section className="relative pt-2 cursor-pointer">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" className="icon icon--feather mx-4"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
-                        <span className="p-1 rounded-full bg-sky-700 px-2 text-xs text-white absolute -top-1 right-3">
-                            2
-                        </span>
+                    <section id="messages" className="relative pt-1 cursor-pointer">
+                        <div className="relative">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" className="icon icon--feather mx-4"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+                            <span className="p-1 rounded-full bg-sky-700 px-2 text-xs text-white absolute -top-3 right-3">
+                                2
+                            </span>
+                        </div>
+                        <div id="alert-messages" className="py-2 bg-white px-4 text-s absolute text-center w-[40vw] h-[25rem] right-4 top-8 rounded-md language-select z-[200] overflow-y-auto">
+                            <div className="flex justify-between border-b-[1px]">
+                                <span>MESSAGES</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" class="icon icon--heroiconsOutline"><path stroke-linecap="round" stroke-linejoin="round" d="M5 12h.01M12 12h.01M19 12h.01M6 12a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0z"></path></svg>
+                            </div>
+                            <ul>
+                                <li className="flex items-center py-2 border-b-[1px]">
+                                    <img className="mr-5" src="profile-icon-9.png" alt="" width='40' height='40'/>
+                                    <div className="flex flex-col items-start">
+                                        <strong>Issor</strong>
+                                        <p>You sent an attachment.</p>
+                                        <span>16 hours ago</span>
+                                    </div>
+                                </li>
+                                <li className="flex items-center py-2 border-b-[1px]">
+                                    <img className="mr-5" src="profile-icon-9.png" alt="" width='40' height='40'/>
+                                    <div className="flex flex-col items-start">
+                                        <strong>Issor</strong>
+                                        <p>You sent an attachment.</p>
+                                        <span>16 hours ago</span>
+                                    </div>
+                                </li>
+                                <li className="flex items-center py-2 border-b-[1px]">
+                                    <img className="mr-5" src="profile-icon-9.png" alt="" width='40' height='40'/>
+                                    <div className="flex flex-col items-start">
+                                        <strong>Issor</strong>
+                                        <p>You sent an attachment.</p>
+                                        <span>16 hours ago</span>
+                                    </div>
+                                </li>
+                                <li className="flex items-center py-2 border-b-[1px]">
+                                    <img className="mr-5" src="profile-icon-9.png" alt="" width='40' height='40'/>
+                                    <div className="flex flex-col items-start">
+                                        <strong>Issor</strong>
+                                        <p>You sent an attachment.</p>
+                                        <span>16 hours ago</span>
+                                    </div>
+                                </li>
+                                <li className="flex items-center py-2 border-b-[1px]">
+                                    <img className="mr-5" src="profile-icon-9.png" alt="" width='40' height='40'/>
+                                    <div className="flex flex-col items-start">
+                                        <strong>Issor</strong>
+                                        <p>You sent an attachment.</p>
+                                        <span>16 hours ago</span>
+                                    </div>
+                                </li>
+                                <li className="flex items-center py-2 border-b-[1px]">
+                                    <img className="mr-5" src="profile-icon-9.png" alt="" width='40' height='40'/>
+                                    <div className="flex flex-col items-start">
+                                        <strong>Issor</strong>
+                                        <p>You sent an attachment.</p>
+                                        <span>16 hours ago</span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
                     </section>
                     {/* Alerta */}
-                    <section className="relative cursor-pointer">
+                    <section id="notific" className="relative cursor-pointer">
                         <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" className="icon icon--feather"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path><path d="M13.73 21a2 2 0 0 1-3.46 0"></path></svg>
                         <span className="p-1 rounded-full bg-red-600 px-2 text-xs text-white absolute -top-2 -right-3">
                             3
                         </span>
+                        <div id="alert-notific" className="py-2 bg-white px-4 text-s absolute text-center w-[40vw] h-[25rem] right-4 top-8 rounded-md language-select z-[200] overflow-y-auto">
+                            <div className="flex justify-between border-b-[1px] py-2">
+                                <span>Notifications</span>
+                                <span class="text-blue-400 font-bold">MARK ALL AS READ</span>
+                            </div>
+                            <ul>
+                                <li className="flex flex-col items-start py-2">
+                                    <span className="text-blue-300 font-bold">Today</span>
+                                    <div className="flex items-center py-2 border-b-[1px] w-full">
+                                        <img className="mr-5" src="profile-icon-9.png" alt="" width='40' height='40'/>
+                                        <div className="flex flex items-start justify-between w-full">
+                                            <p className="py-5">Margo Corn has invited you to the project Untitled</p>
+                                            <span>16 hours ago</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li className="flex flex-col items-start py-2">
+                                    <span className="text-blue-300 font-bold">Yesterday</span>
+                                    <div className="flex items-center py-2 border-b-[1px] w-full">
+                                        <img className="mr-5" src="profile-icon-9.png" alt="" width='40' height='40'/>
+                                        <div className="flex flex items-start justify-between w-full">
+                                            <p className="py-5">Margo Corn has invited you to the project Untitled</p>
+                                            <span>13:00</span>
+                                        </div>
+                                    </div>
+                                </li><li className="flex flex-col items-start py-2">
+                                    <span className="text-blue-300 font-bold"></span>
+                                    <div className="flex items-center py-2 border-b-[1px] w-full">
+                                        <img className="mr-5" src="profile-icon-9.png" alt="" width='40' height='40'/>
+                                        <div className="flex flex items-start justify-between w-full">
+                                            <p className="py-5">Margo Corn has invited you to the project Untitled</p>
+                                            <span>15:54</span>
+                                        </div>
+                                    </div>
+                                </li><li className="flex flex-col items-start py-2">
+                                    <span className="text-blue-300 font-bold">25 Mar</span>
+                                    <div className="flex items-center py-2 border-b-[1px] w-full">
+                                        <img className="mr-5" src="profile-icon-9.png" alt="" width='40' height='40'/>
+                                        <div className="flex flex items-start justify-between w-full">
+                                            <p className="py-5">Margo Corn has invited you to the project Untitled</p>
+                                            <span>14:12</span>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
                     </section>
                     {/* Perfil */}
                     <section>
