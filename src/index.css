@@ -148,7 +148,7 @@ input:focus-visible{
   transition: 0.3s ease-in-out;
 }
 
-.sub-menu:hover svg:not(.arrow){
+.sub-menu:hover svg:not(.arrow, .arrow2){
     color: white;
     background-color: rgb(163, 193, 254);
     border-radius: 0px 5px 13px 0px;
@@ -173,11 +173,20 @@ input:focus-visible{
 }
 
 .in-menu span{
-  padding-top: 5px;
-  padding-bottom: 5px;
+  padding-top: 0.5rem;
+  padding-bottom: 0,5rem;
   width: 12vw;
   padding-left: 1rem;
   cursor: pointer;
+}
+
+.in-menu .dropdown, .in-menu .dropdown2{
+  display: flex;
+  flex-direction: column;
+  overflow-y: hidden;
+  width: 100%;
+  height: 0px;
+  transition: height 0.3s ease;
 }
 
 div.in-menu span:hover{
