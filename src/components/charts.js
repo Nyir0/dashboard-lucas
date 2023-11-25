@@ -1,22 +1,19 @@
-
 import React from "react";
 import { Chart } from "react-google-charts";
+import { graficoOne } from "../data/graficoOne";
 
-const dataOld = [
-  ["Name", "Popularity"],
-  ["Cesar", 250],
-  ["Rachel", 4200],
-  ["Patrick", 2900],
-  ["Eric", 8200],
-];
+const dataChartsOld = graficoOne.filter(grafic => grafic.type === 'Expenses');
+const dataChartsNew = graficoOne.filter(grafic => grafic.type === 'Earnings');
 
-const dataNew = [
-  ["Name", "Popularity"],
-  ["Cesar", -370],
-  ["Rachel", 600],
-  ["Patrick", 700],
-  ["Eric", 1500],
-];
+const formatChartData = (data) => {
+  return [
+    ["Name", "Popularity"],
+    ...data.map(item => [item.mes, Number(item.data)])
+  ];
+};
+
+const dataOld = formatChartData(dataChartsOld);
+const dataNew = formatChartData(dataChartsNew);
 
 const diffdata = {
   old: dataOld,
@@ -27,8 +24,8 @@ export function Grafico() {
   return (
     <Chart
       chartType="ColumnChart"
-      width="100%"
-      height="400px"
+      width="50%"
+      height="100px"
       diffdata={diffdata}
     />
   );
