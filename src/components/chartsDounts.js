@@ -2,7 +2,7 @@ import './chartDoughnut';
 function Dounts() {
 
     return (
-        <div className="flex m-4 max-md:flex max-xl:flex-col max-md:space-y-0 items-start order-4 max-xl:order-none col-span-6 max-xl:col-span-1">
+        <div className="flex m-4 max-md:flex max-xl:flex-col max-md:space-y-0 items-start order-4 max-xl:order-none col-span-6 max-xl:col-span-1 relative">
             <div className='flex flex-col card p-6 w-[50vw] max-sm:w-full mr-3 min-h-[37.5vh]'>
                 <strong>Sales by Category</strong>
                 <div className='flex pt-5 justify-evenly'>

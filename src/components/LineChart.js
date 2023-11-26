@@ -33,9 +33,9 @@ $(document).ready(function(){
                 label: 'Series 1', // Name the series
                 data: [745, 468, 976, 1176], // Specify the data values array
                 fill: false,
-                borderColor: '#2196f3', // Add custom color border (Line)
-                backgroundColor: '#2196f3', // Add custom color background (Points and Fill)
-                borderWidth: 1, // Specify bar border width
+                borderColor: 'rgba(96, 138, 208, 0.85)', // Add custom color border (Line)
+                backgroundColor: 'rgba(96, 138, 208, 0.85)', // Add custom color background (Points and Fill)
+                borderWidth: 4, // Specify bar border width
                 cubicInterpolationMode: 'monotone',
             }]},
         options: options

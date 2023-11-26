@@ -1,55 +1,84 @@
 import $ from 'jquery';
-import React from 'react';
 import Chart from 'chart.js/auto';
 import 'chartjs-plugin-datalabels';
 
-$(document).ready(function() {
-    var ctx = document.getElementById("myChart");
+$(document).ready(function () {
+  // Seletor do elemento canvas (gráfico)
+  var canvas = $("#myChart");
 
-    const Options = {
-        cutout: '75%',
-        responsive: false,
-        maintainAspectRatio: false,
-        onHover: function (event, legendItem) {
-            var legend = this.legend.active;
-            console.log(this.legend);
-            // if (event.type === 'mousemove') {
-            //   legend.active = true;
-            // } else if (event.type === 'mouseout') {
-            //   legend.active = false;
-            // }
-            // this.update(); // Atualiza o gráfico para refletir as alterações
-        },
-        plugins: {
-            datalabels: {
-                display: false,
-            },
-            tooltip: {
-                enabled: false,
-            },
-            legend: {
-                display: false, // Configuração para esconder as legendas
-            },
-        }
-    }
+  // Criação do elemento do texto
+  var tooltipContainer = document.createElement('span');
+  canvas.parent().append(tooltipContainer); // Adiciona ao pai do elemento canvas
 
-    var myChart = new Chart(ctx, {
-        type: 'doughnut',
-        data: {
-            labels: ['OK', 'WARNING', 'CRITICAL', 'UNKNOWN'],
-            datasets: [{
-            label: "",
-            data: [25, 65, 15, 10],
-            backgroundColor: [
-                'rgb(152 159 224)',
-                'rgb(103 192 135)',
-                'rgb(239 214 84)',
-                'rgb(221 140 140)'
-            ],
-            borderWidth: 0.2,
-            cutoutPercentage: 80
-            }]
-        },
-        options: Options
-    });
-})
+  var ctx = canvas[0].getContext("2d");
+
+  const options = {
+    cutout: '75%',
+    responsive: false,
+    maintainAspectRatio: false,
+    plugins: {
+      datalabels: {
+        display: false,
+      },
+      tooltip: {
+        enabled: false,
+      },
+      legend: {
+        display: false,
+      },
+    },
+    onHover: function (event, elements) {
+      const chart = this;
+
+      if (elements && elements.length > 0) {
+        const index = elements[0].index;
+        const value = chart.data.datasets[0].data[index];
+        const labelText = chart.data.labels[index];
+
+        const center_x = (chart.chartArea.left + chart.chartArea.right) / 2;
+        const center_y = (chart.chartArea.top + chart.chartArea.bottom) / 2;
+
+        // Atualiza o conteúdo e a posição do span
+        tooltipContainer.textContent = `${labelText}: ${value}%`;
+        tooltipContainer.style.position = 'absolute';
+        tooltipContainer.style.left = '11vw';
+        tooltipContainer.style.top = '21vh';
+        tooltipContainer.style.transform = 'translate(-50%, -50%)';
+        tooltipContainer.style.backgroundColor = 'transparent';
+        tooltipContainer.style.padding = '5px';
+        tooltipContainer.style.borderRadius = '5px';
+        tooltipContainer.style.pointerEvents = 'none';
+        tooltipContainer.style.fontFamily = 'Arial';
+        tooltipContainer.style.fontSize = '.75vw';
+        tooltipContainer.style.color = 'Black';
+        tooltipContainer.style.fontWeight = 700;
+
+        // Torna o span visível
+        tooltipContainer.style.display = 'block';
+      } else {
+        // Se o mouse não estiver sobre uma parte específica, esconde o span
+        tooltipContainer.style.display = 'none';
+      }
+    },
+  };
+
+  var myChart = new Chart(ctx, {
+    type: 'doughnut',
+    data: {
+      labels: ['Electronics', 'Women´s', 'Phones', 'Others'],
+      datasets: [{
+        label: "",
+        data: [25, 65, 15, 10],
+        backgroundColor: [
+          'rgb(152 159 224)',
+          'rgb(103 192 135)',
+          'rgb(239 214 84)',
+          'rgb(221 140 140)',
+        ],
+        borderWidth: 0.2,
+        cutoutPercentage: 80,
+      }],
+    },
+    options: options,
+  });
+});
