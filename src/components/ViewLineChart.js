@@ -2,7 +2,7 @@ import "./LineChart";
 
 function Linechart(){
     return(
-        <div className="w-[20vw] max-sm:w-full h-[30vh] py-4 max-sm:px-4">
+        <div className="w-[40vw] max-sm:w-full h-[40vh] px-10 py-4 max-sm:px-8">
             <canvas id="myLineChart"></canvas>
             <div className="flex flex-col max-sm:items-center">
                 <div className="flex pl-[1.4vw] max-sm:pl-0 text-[var(--color-text1)]">
