@@ -41,10 +41,10 @@ $(document).ready(function() {
             label: "",
             data: [25, 65, 15, 10],
             backgroundColor: [
-                'rgb(152 159 224',
-                'rgb(103 192 135',
-                'rgb(239 214 84',
-                'rgb(221 140 140'
+                'rgb(152 159 224)',
+                'rgb(103 192 135)',
+                'rgb(239 214 84)',
+                'rgb(221 140 140)'
             ],
             borderWidth: 0.2,
             cutoutPercentage: 80

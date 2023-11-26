@@ -5,17 +5,29 @@ function Dounts() {
         <div className="flex m-4 max-md:flex max-xl:flex-col max-md:space-x-8 max-xl:space-x-0 space-y-8 max-md:space-y-0 max-xl:space-y-8 items-start order-4 max-xl:order-none col-span-6 max-xl:col-span-1">
             <div className='flex flex-col card p-6 w-[50vw] mr-3 min-h-[37.5vh]'>
                 <strong>Sales by Category</strong>
-                <div className='flex'>
-                    <canvas id="myChart" width="150" height="150" className='my-3'></canvas>
-                    <div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
+                <div className='flex pt-5 justify-evenly'>
+                    <canvas id="myChart" width="120" height="120" className='my-3'></canvas>
+                    <div className='pt-1'>
+                        <d1v className='flex items-center my-2'>
+                            <span className='w-3 h-3 rounded-full bg-[#989FE0] mr-4'></span>
+                            <span>Electronics 8.1k</span>
+                        </d1v>
+                        <d1v className='flex items-center my-2'>
+                            <span className='w-3 h-3 rounded-full bg-[#67C087] mr-4'></span>
+                            <span>Women´s 10.9k</span>
+                        </d1v>
+                        <d1v className='flex items-center my-2'>
+                            <span className='w-3 h-3 rounded-full bg-[#EFD654] mr-4'></span>
+                            <span>Phones 3.0k</span>
+                        </d1v>
+                        <div className='flex items-center my-2'>
+                            <span className='w-3 h-3 rounded-full bg-[#E0989D] mr-4'></span>
+                            <span>Others 5.5k</span>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div className="card max-md:w-1/2 max-xl:w-full p-6 w-[50vw] ml-3 min-h-[37.5vh]">
+            <div className="card max-md:w-1/2 max-xl:w-full p-6 w-[50vw] ml-3 min-h-[23vh]">
                 <div className="card__header">
                     <h3 className="text-lg font-bold">Customer Gender</h3>
                 </div>
