@@ -80,12 +80,24 @@ $(document).ready(function(){
         $("#alert-notific").show("fast");
     })
 
+    $("#menu-mobile").on("click", function(){
+        $("#section-menu-mobile").css("left", "0px");
+        $(".close-btn").show("fast");
+    })
+
+    $(".close-btn").on("click", function(){
+        $("#section-menu-mobile").css("left", "-100%");
+        $(".close-btn").hide("fast");
+    })
+
 })
 
 $(document).on('click', function(e) {
     var element1 = $('#language');
     var element2 = $('#messages');
     var element3 = $('#notific');
+    var element4 = $("#menu-mobile");
+    var element4_1 = $("#section-menu-mobile");
 
     // Verifica se o clique ocorreu fora do elemento específico
     if (!element1.is(e.target) && element1.has(e.target).length === 0) {

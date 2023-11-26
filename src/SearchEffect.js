@@ -1,12 +1,26 @@
 import $ from 'jquery';
+
+function isMobile() {
+    // Verifica a largura da tela
+    return window.innerWidth <= 768;
+}
+
 $(document).ready(function() {
     
     $(".search").on("click", function(){
-        $(".search").css("transform", "scale(1.1")
-                    .css("position", "absolute")
-                    .css("top", "0vw")
-                    .css("left", "1.25vw")
-                    .css("width", "72vw")
+        if (isMobile()) {
+            // Código a ser executado apenas em dispositivos móveis
+            $(".search").css("position", "absolute")
+                        .css("top", "-2vw")
+                        .css("left", "15vw")
+                        .css("width", "80vw")
+        } else {
+            $(".search").css("transform", "scale(1.1")
+                        .css("position", "absolute")
+                        .css("top", "0vw")
+                        .css("left", "2vw")
+                        .css("width", "72vw")
+        }
     })
 
 })

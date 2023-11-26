@@ -46,6 +46,12 @@ header i{
   font-size: 1vw;
 }
 
+@media screen and (max-width:767px){
+  .text-s{
+    font-size: 3vw;
+  }
+}
+
 .active{
   background-image: linear-gradient(45deg, rgba(67, 93, 159, 0.89), rgba(67, 95, 166, 0.89), rgba(108, 146, 243, 0.89));
   color: white;
@@ -87,6 +93,25 @@ header{
   header{
     width: fit-content;
   }
+}
+
+@media screen and (max-width:767px) {
+  .menu{
+    width: 70vw;
+    background-color: white !important;
+  }
+}
+
+#section-menu-mobile{
+  transition: left 0.4s ease-in-out;
+}
+
+.close-btn{
+    display: none;
+    position: fixed;
+    right: 5px;
+    top: 5px;
+    width: 8vw;
 }
 
 nav svg{
@@ -234,4 +259,13 @@ div.in-menu span:hover{
   box-shadow: 1px 1px 5px gray;
   margin-top: 0px !important;
   margin-bottom: 0px !important;
+}
+
+@media screen and (max-width:767px) {
+  .card{
+    margin-top: 2rem !important;
+  }
+  .simplebar-content{
+    overflow-x: auto;
+  }
 }

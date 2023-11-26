@@ -1,17 +1,17 @@
 function TryNow(){
     return(
-        <div className="flex max-md:space-x-8 max-xl:space-x-0 space-y-8 max-md:space-y-0 max-xl:space-y-8 order-3 max-xl:order-none col-span-6 max-xl:col-span-1 px-4">                               
-            <div className="flex flex-col banner-tryNow w-1/2 bg-gradient-to-br from-primary-600 to-primary-400 shadow rounded max-md:w-1/2 max-max-xl:w-full max-md:gap-10 max-xl:relative mr-3">
-                <div className="flex flex-col items-start min-w-0 p-10 relative h-[70vh]">
-                    <div className="text-max-xl font-semibold text-white">Try pro version</div>
+        <div className="flex space-y-8 max-sm:flex-col order-3 max-sm:order-none col-span-6 max-sm:col-span-1 px-4">                               
+            <div className="flex flex-col banner-tryNow w-1/2 max-sm:w-full bg-gradient-to-br from-primary-600 to-primary-400 shadow rounded max-max-sm:w-full max-sm:gap-10 max-sm:relative mr-3">
+                <div className="flex flex-col items-start min-w-0 p-10 relative h-[70vh] max-sm:h-[40vh]">
+                    <div className="text-max-sm font-semibold text-white">Try pro version</div>
                     <p className="text-sm mb-5 w-2/3 pr-3 text-primary-200 text-white">Unlock the full power of selling for 2 weeks for free!</p>
                     <button href="#" className="bg-white py-3 px-5 rounded-lg font-bold text-[#6183cc]">Try now!</button>
-                    <img class="max-w-[60%] absolute -bottom-[4.5vh] left-[7vw]" src="img/man-chart.svg" alt=""/>
+                    <img class="max-w-[60%] max-sm:max-w-[40%] absolute -bottom-[4.5vh] max-sm:-bottom-[1.75vh] left-[7vw] max-sm:left-[50vw]" src="img/man-chart.svg" alt=""/>
                 </div>
-                <div className="flex justify-end self-end w-1/3 max-md:w-3/5 max-md:self-center max-xl:w-36 max-xl:absolute bottom-0 right-3 overflow-hidden">
+                <div className="flex justify-end self-end w-1/3 max-sm:w-3/5 max-sm:self-center max-sm:w-36 max-sm:absolute bottom-0 right-3 overflow-hidden">
                 </div>
             </div>
-            <div className="flex flex-col card w-1/2 my-0 p-4 ml-3">
+            <div className="flex flex-col card w-1/2 max-sm:w-full my-0 p-4 ml-3 max-sm:ml-0 max-sm:mt-4">
                 <div className="flex justify-between">
                     <h3 className="text-lg font-bold">
                         Customer Reviews
