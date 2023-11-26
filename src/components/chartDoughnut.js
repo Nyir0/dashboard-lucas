@@ -41,17 +41,16 @@ $(document).ready(function () {
         // Atualiza o conteúdo e a posição do span
         tooltipContainer.textContent = `${labelText}: ${value}%`;
         tooltipContainer.style.position = 'absolute';
-        tooltipContainer.style.left = '11vw';
-        tooltipContainer.style.top = '21vh';
+        tooltipContainer.style.left = center_x + 'px';
+        tooltipContainer.style.top = center_y + 'px';
         tooltipContainer.style.transform = 'translate(-50%, -50%)';
-        tooltipContainer.style.backgroundColor = 'transparent';
+        tooltipContainer.style.backgroundColor = 'rgba(255, 255, 255, 0.8)';
         tooltipContainer.style.padding = '5px';
         tooltipContainer.style.borderRadius = '5px';
         tooltipContainer.style.pointerEvents = 'none';
         tooltipContainer.style.fontFamily = 'Arial';
-        tooltipContainer.style.fontSize = '.75vw';
+        tooltipContainer.style.fontSize = '14px';
         tooltipContainer.style.color = 'Black';
-        tooltipContainer.style.fontWeight = 700;
 
         // Torna o span visível
         tooltipContainer.style.display = 'block';
@@ -65,7 +64,7 @@ $(document).ready(function () {
   var myChart = new Chart(ctx, {
     type: 'doughnut',
     data: {
-      labels: ['Electronics', 'Women´s', 'Phones', 'Others'],
+      labels: ['Eletronics', 'Women´s', 'Phones', 'Others'],
       datasets: [{
         label: "",
         data: [25, 65, 15, 10],
