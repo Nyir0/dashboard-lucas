@@ -3,14 +3,7 @@ import '../Dropdown';
 function Menu(){
     return(
         <section id="section-menu-mobile" className="max-md:fixed max-md:-left-[100%] max-sm:z-[1000]">
-            <div className="flex items-center px-3 mr-5 py-3 text-m italic title-header w-[20vw] max-sm:w-[70vw] logo-shadow h-full">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" className="text-primary-600 transform rotate-180 mr-2 w-6 h-6 icon icon--feather"><path d="M9.59 4.59A2 2 0 1 1 11 8H2m10.59 11.41A2 2 0 1 0 14 16H2m15.73-8.27A2.5 2.5 0 1 1 19.5 12H2"></path></svg>
-                <strong className="text-[var(--color-text1)] max-sm:text-[4vw]">
-                    Skewind
-                </strong>
-                <img className="hidden top-5 right-5 close-btn" src="img/closeBtn.svg" alt="" />
-            </div>
-            <div className="absolute menu w-[20vw] pr-1 overflow-y-scroll h-[92.5vh] text-[var(--color-text1)] pb-3">
+            <div className="fixed top-[7.5vh] menu w-[20vw] pr-1 overflow-y-visible overflow-x-hidden h-[92.5vh] text-[var(--color-text1)] pb-3">
                 <div className="flex flex-col pt-10 px-4 pb-5 ">
                     <strong className="font-extrabold text-s max-sm:text-[3vw]">DASHBOARDS</strong>
                     <span>Useful dashboard designs</span>

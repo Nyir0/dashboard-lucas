@@ -57,6 +57,7 @@ header i{
   color: white;
   position: relative;
   border-radius: 0px 5px 25px 0px;
+  width: 21vw;
 }
 
 .active svg:not(.arrow){
@@ -110,7 +111,7 @@ header{
     display: none;
     position: fixed;
     right: 5px;
-    top: 5px;
+    top: 52px;
     width: 8vw;
 }
 
@@ -164,9 +165,10 @@ input:focus-visible{
   transition: all 0.3s ease-in-out;
 }
 
+
+
 .menu-unique:not(.active):hover svg{
-    color: white;
-    background-color: rgb(163, 193, 254);
+    background-color: rgb(219, 229, 248);
     border-radius: 0px 5px 13px 0px;
     border-right: 2px solid rgba(132, 166, 254, 0.89);
     margin-right: 2vw;

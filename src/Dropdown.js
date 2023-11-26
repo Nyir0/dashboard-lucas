@@ -90,14 +90,22 @@ $(document).ready(function(){
         $(".close-btn").hide("fast");
     })
 
+    $("#chat-setting").on("click", function(){
+        if($("#chat-setting").hasClass("close-chat-setting")){
+            $("#chat-config").hide("fast");
+            $("#chat-setting").removeClass("close-chat-setting");
+        }else{
+            $("#chat-config").show("fast");
+            $("#chat-setting").addClass("close-chat-setting");
+        }
+    })
+
 })
 
 $(document).on('click', function(e) {
     var element1 = $('#language');
     var element2 = $('#messages');
     var element3 = $('#notific');
-    var element4 = $("#menu-mobile");
-    var element4_1 = $("#section-menu-mobile");
 
     // Verifica se o clique ocorreu fora do elemento específico
     if (!element1.is(e.target) && element1.has(e.target).length === 0) {
@@ -111,4 +119,5 @@ $(document).on('click', function(e) {
     if (!element3.is(e.target) && element3.has(e.target).length === 0) {
         $("#alert-notific").hide("fast");
     }
+
 });

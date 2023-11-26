@@ -3,10 +3,17 @@ import "./SearchEffect";
 
 function Template(){
     return(
-        <header className="fixed">
-            <Menu />
-            <div className="flex justify-between items-center header-shadow max-sm:w-[100vw]">
-                <nav className="flex items-center w-[55vw] max-sm:w-fit max-sm:mr-[2vw] py-1 relative">
+        <>
+        <header className="fixed right-0">
+            <div className="flex justify-between items-center header-shadow max-sm:w-[100vw] w-full">
+                <nav className="flex items-center w-[55vw] max-sm:w-fit max-sm:mr-[2vw] relative">
+                    <div className="flex items-center px-3 mr-5 py-3 text-m italic title-header w-[35vw] max-sm:w-[70vw] logo-shadow h-full max-sm:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" className="text-primary-600 transform rotate-180 mr-2 w-6 h-6 icon icon--feather"><path d="M9.59 4.59A2 2 0 1 1 11 8H2m10.59 11.41A2 2 0 1 0 14 16H2m15.73-8.27A2.5 2.5 0 1 1 19.5 12H2"></path></svg>
+                        <strong className="text-[var(--color-text1)] max-sm:text-[4vw]">
+                            Skewind
+                        </strong>
+                    </div>
+                    <img className="hidden close-btn" src="img/closeBtn.svg" alt="" />
                     {/* Icons de navegacao */}
                     <div id="menu-mobile" className="hidden max-sm:block max-sm:px-4">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" class="icon icon--heroiconsOutline"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h8m-8 6h16"></path></svg>
@@ -76,7 +83,9 @@ function Template(){
                         <div id="alert-messages" className="py-2 bg-white px-4 text-s absolute text-center w-[40vw] h-[25rem] right-4 top-8 rounded-md language-select z-[200] overflow-y-auto hidden">
                             <div className="flex justify-between border-b-[1px]">
                                 <span>MESSAGES</span>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" className="icon icon--heroiconsOutline"><path stroke-linecap="round" stroke-linejoin="round" d="M5 12h.01M12 12h.01M19 12h.01M6 12a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0z"></path></svg>
+                                <div id="chat-setting" className="relative">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" className="icon icon--heroiconsOutline"><path stroke-linecap="round" stroke-linejoin="round" d="M5 12h.01M12 12h.01M19 12h.01M6 12a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0z"></path></svg>
+                                </div>
                             </div>
                             <ul>
                                 <li className="flex items-center py-2 border-b-[1px]">
@@ -128,6 +137,16 @@ function Template(){
                                     </div>
                                 </li>
                             </ul>
+                        </div>
+                        <div id="chat-config" className="flex-col p-4 absolute right-[4vw] top-[10vh] z-[300] bg-white w-[20vw] card hidden">
+                            <div className="flex flex-col mb-2 border-b-2">
+                                <strong className="text-m">CHAT SETTINGS</strong>
+                                <span className="text-s">Customize your chat experience</span>
+                            </div>
+                            <div className="flex flex-col">
+                                <span className="px-3 py-2 cursor-pointer hover:bg-slate-200 w-full">Mark all as read</span>
+                                <span className="px-3 py-2 cursor-pointer hover:bg-slate-200 w-full">Notification settings</span>
+                            </div>
                         </div>
                     </section>
                     {/* Alerta */}
@@ -199,7 +218,8 @@ function Template(){
                 </section>
             </div>
         </header>
-        
+        <Menu />
+        </>
     )
 }
 
