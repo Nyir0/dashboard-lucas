@@ -76,7 +76,7 @@ function Template(){
                     <section id="messages" className="relative pt-1 cursor-pointer">
                         <div className="relative">
                             <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" className="icon icon--feather mx-4"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
-                            <span className="p-1 rounded-full bg-sky-700 px-2 text-xs text-white absolute -top-3 right-3">
+                            <span className="p-1 rounded-full bg-sky-700 px-2 text-xs text-white absolute -top-3 max-sm:-top-2 right-3">
                                 2
                             </span>
                         </div>
@@ -152,7 +152,7 @@ function Template(){
                     {/* Alerta */}
                     <section id="notific" className="relative cursor-pointer">
                         <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" className="icon icon--feather"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path><path d="M13.73 21a2 2 0 0 1-3.46 0"></path></svg>
-                        <span className="p-1 rounded-full bg-red-600 px-2 text-xs text-white absolute -top-3 -right-3">
+                        <span className="p-1 rounded-full bg-red-600 px-2 text-xs text-white absolute -top-3 max-sm:-top-2 -right-3 max-sm:-right-2">
                             3
                         </span>
                         <div id="alert-notific" className="py-2 bg-white px-4 text-s absolute text-center w-[40vw] h-[25rem] right-4 top-8 rounded-md language-select z-[200] overflow-y-auto hidden">

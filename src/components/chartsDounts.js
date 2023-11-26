@@ -33,7 +33,7 @@ function Dounts() {
                 </div>
                 <div className="card__body flex items-center space-x-8">
                     <div className="flex items-center w-1/2 space-x-4">
-                        <a href="#" className="button button--icon button--flat button--flat--soft scheme-primary w-16 h-16">
+                        <a href="#" className="button button--icon button--flat button--flat--soft scheme-primary">
                             <img src="img/male.svg" alt="" />
                         </a>
                         <div>
@@ -42,7 +42,7 @@ function Dounts() {
                         </div>
                     </div>
                     <div className="flex items-center w-1/2 space-x-4">
-                        <a href="#" className="button button--icon button--flat button--flat--soft scheme-primary w-16 h-16">
+                        <a href="#" className="button button--icon button--flat button--flat--soft scheme-primary">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 512 512" fill="currentColor" className="icon icon--ionicons"><title>Female</title><path d="M430 190c0-95.94-78.06-174-174-174S82 94.06 82 190c0 88.49 66.4 161.77 152 172.61V394h-36a22 22 0 000 44h36v36a22 22 0 0044 0v-36h36a22 22 0 000-44h-36v-31.39c85.6-10.84 152-84.12 152-172.61zm-304 0c0-71.68 58.32-130 130-130s130 58.32 130 130-58.32 130-130 130-130-58.32-130-130z"></path></svg>
                         </a>
                         <div>
