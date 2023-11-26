@@ -206,7 +206,7 @@ function Template(){
                     <section id="profile" className="px-5 cursor-pointer relative">
                         <div className="flex justify-between hover:bg-slate-200 px-4 max-sm:px-0">
                             <div className="relative">
-                                <img src="profile-icon-9.png" alt="" className="w-[10vw]"/>
+                                <img src="profile-icon-9.png" alt="" className="max-sm:w-[10vw] w-[3vw]"/>
                                 <span className="p-1 w-4 h-4 border-white border-2 bg-green-600 rounded-full absolute top-[2.2vh] right-[0vw]"></span>
                             </div>
                             <div className="flex flex-col px-4 max-sm:hidden">
