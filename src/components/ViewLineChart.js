@@ -3,6 +3,22 @@ import "./LineChart";
 function Linechart(){
     return(
         <div className="w-[40vw] max-sm:w-full h-[40vh] px-10 py-4 max-sm:px-8">
+            <div className="flex mb-5">
+                <d1v className='flex items-center mr-10'>
+                    <span className='w-3 h-3 rounded-full bg-[#989FE0] mr-4'></span>
+                    <span>Earnings</span>
+                </d1v>
+                <d1v className='flex items-center'>
+                    <span className='w-3 h-3 rounded-full bg-[#b0c6e3] mr-4'></span>
+                    <span>Expenses</span>
+                </d1v>
+            </div>
+            <select>
+                <option value="2023" key="">2023</option>
+                <option value="2023" key="">2022</option>
+                <option value="2023" key="">2021</option>
+                <option value="2023" key="">2020</option>
+            </select>
             <canvas id="myLineChart"></canvas>
             <div className="flex flex-col max-sm:items-center">
                 <div className="flex pl-[1.4vw] max-sm:pl-0 text-[var(--color-text1)]">

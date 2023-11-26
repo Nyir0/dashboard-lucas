@@ -38,6 +38,18 @@ body {
   color: rgb(100 116 139 / var(--tw-text-opacity))
 }
 
+select{
+  border-radius: 5px;
+  padding: 6px 0;
+  width: 10vw;
+  border: 1px solid var(--color-text1);
+}
+
+select:focus-visible{
+  border-radius: 5px 5px 0 0;
+  border: 2px solid var(--color-text1);
+}
+
 header i{
   font-size: 1.5vw;
 }
