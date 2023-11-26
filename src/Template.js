@@ -49,7 +49,7 @@ function Template(){
                 </nav>
                 {/* Bandeira de lingugagem */}
                 <section className="flex items-center max-sm:pt-2">
-                    <div id="language" className="relative cursor-pointer">
+                    <div id="language" className="relative cursor-pointer max-sm:px-2">
                         <img src="flags/eua.svg" alt="" />
                         <div className="py-2 bg-white px-4 text-s absolute text-center w-36 -left-8 top-8 rounded-md language-select hidden">
                             <ul>
@@ -80,7 +80,7 @@ function Template(){
                                 2
                             </span>
                         </div>
-                        <div id="alert-messages" className="py-2 bg-white px-4 text-s absolute text-center w-[40vw] h-[25rem] right-4 top-8 rounded-md language-select z-[200] overflow-y-auto hidden">
+                        <div id="alert-messages" className="py-2 bg-white px-4 text-s absolute text-center w-[40vw] h-[25rem] right-4 top-8 rounded-md language-select z-[200] overflow-y-auto hidden max-sm:w-[90vw] max-sm:-right-24">
                             <div className="flex justify-between border-b-[1px]">
                                 <span>MESSAGES</span>
                                 <div id="chat-setting" className="relative">
@@ -155,7 +155,7 @@ function Template(){
                         <span className="p-1 rounded-full bg-red-600 px-2 text-xs text-white absolute -top-3 max-sm:-top-2 -right-3 max-sm:-right-2">
                             3
                         </span>
-                        <div id="alert-notific" className="py-2 bg-white px-4 text-s absolute text-center w-[40vw] h-[25rem] right-4 top-8 rounded-md language-select z-[200] overflow-y-auto hidden">
+                        <div id="alert-notific" className="py-2 bg-white px-4 text-s absolute text-center w-[40vw] h-[25rem] right-4 top-8 rounded-md language-select z-[200] overflow-y-auto hidden max-sm:w-[90vw] max-sm:-right-24">
                             <div className="flex justify-between border-b-[1px] py-2">
                                 <span>Notifications</span>
                                 <span className="text-blue-400 font-bold">MARK ALL AS READ</span>
@@ -203,16 +203,50 @@ function Template(){
                         </div>
                     </section>
                     {/* Perfil */}
-                    <section>
-                        <div className="px-5 flex justify-between">
+                    <section id="profile" className="px-5 cursor-pointer relative">
+                        <div className="flex justify-between hover:bg-slate-200 px-4 max-sm:px-0">
                             <div className="relative">
-                                <img src="profile-icon-9.png" alt="" width='40' height='40'/>
-                                <span className="p-1 w-4 h-4 border-white border-2 bg-green-600 rounded-full w-1 h-1 absolute top-6 right-0"></span>
+                                <img src="profile-icon-9.png" alt="" className="w-[10vw]"/>
+                                <span className="p-1 w-4 h-4 border-white border-2 bg-green-600 rounded-full absolute top-[2.2vh] right-[0vw]"></span>
                             </div>
                             <div className="flex flex-col px-4 max-sm:hidden">
                                 <strong>John Doe</strong>
                                 <span className="text-xs">Administrador</span>
                             </div>
+                        </div>
+                        <div id="menu-profile" className="absolute top-14 card bg-white w-[15vw] right-10 p-4 hidden max-sm:w-[60vw] max-sm:top-2 max-sm:right-4">
+                            <ul>
+                                <li className="flex my-2 hover:bg-slate-200 p-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" class="icon icon--feather mr-4"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+                                    Profile
+                                </li>
+                                <li className="flex my-2 hover:bg-slate-200 p-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" class="icon icon--feather mr-4"><polyline points="22 12 16 12 14 15 10 15 8 12 2 12"></polyline><path d="M5.45 5.11L2 12v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-6l-3.45-6.89A2 2 0 0 0 16.76 4H7.24a2 2 0 0 0-1.79 1.11z"></path></svg>
+                                    Inbox
+                                </li>
+                                <li className="flex my-2 hover:bg-slate-200 p-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" class="icon icon--feather mr-4"><polyline points="9 11 12 14 22 4"></polyline><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path></svg>
+                                    Task
+                                </li>
+                                <li className="flex my-2 hover:bg-slate-200 p-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" class="icon icon--feather mr-4"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>                        
+                                    Chat
+                                </li>
+                            </ul>
+                            <ul className="pt-5">
+                                <li className="flex my-2 hover:bg-slate-200 p-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" class="icon icon--feather mr-4"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg>
+                                    Settings
+                                </li>
+                                <li className="flex my-2 hover:bg-slate-200 p-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" class="icon icon--feather mr-4"><circle cx="12" cy="12" r="10"></circle><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path><line x1="12" y1="17" x2="12.01" y2="17"></line></svg>
+                                    Help
+                                </li>
+                                <li className="flex my-2 hover:bg-slate-200 p-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" class="icon icon--feather mr-4"><path d="M18.36 6.64a9 9 0 1 1-12.73 0"></path><line x1="12" y1="2" x2="12" y2="12"></line></svg>
+                                    Sign Out
+                                </li>
+                            </ul>
                         </div>
                     </section>
                 </section>

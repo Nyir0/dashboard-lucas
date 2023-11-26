@@ -271,3 +271,8 @@ div.in-menu span:hover{
     overflow-x: auto;
   }
 }
+
+li:hover svg{
+  margin-right: 1.5rem;
+  transition: margin-right 0.2s ease-in-out;
+}

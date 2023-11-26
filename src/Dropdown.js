@@ -100,6 +100,16 @@ $(document).ready(function(){
         }
     })
 
+    $("#profile").on("click", function(){
+        if($("#profile").hasClass("profile-active")){
+            $("#menu-profile").hide("fast");
+            $("#profile").removeClass("profile-active");
+        }else{
+            $("#menu-profile").show("fast");
+            $("#profile").addClass("profile-active");
+        }
+    })
+
 })
 
 $(document).on('click', function(e) {

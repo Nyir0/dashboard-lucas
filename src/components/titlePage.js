@@ -2,6 +2,7 @@
 
 import { Grafico } from './charts';
 import { Table } from './table';
+import Linechart from './ViewLineChart'
 
 export function Hello(){
     return(
@@ -53,8 +54,9 @@ export function Hello(){
                         </div>
                         <img src="img/girl-charts.svg" className='max-sm:absolute max-sm:opacity-50 max-sm:-bottom-12 max-sm:w-[70vw] max-sm:right-0 max-sm:-z-10' alt="" />
                     </div>
-                    <section className='shadow-[0_5px_20px_5px_rgba(0,0,0,0.3)] w-[97%] mx-2 rounded-3xl'>
+                    <section className='flex max-sm:flex-col hadow-[0_5px_20px_5px_rgba(0,0,0,0.3)] w-[97%] mx-2 rounded-3xl h-[45vh] max-sm:h-[85vh]'>
                         <Grafico/>
+                        <Linechart />
                     </section>
                     <Table/>
                 </div>
