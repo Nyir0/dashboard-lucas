@@ -17,8 +17,8 @@ $(document).ready(function() {
         } else {
             $(".search").css("transform", "scale(1.1")
                         .css("position", "absolute")
-                        .css("top", "0vw")
-                        .css("left", "2vw")
+                        .css("top", "0.5vh")
+                        .css("left", "22.5vw")
                         .css("width", "72vw")
         }
     })

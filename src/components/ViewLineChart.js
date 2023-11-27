@@ -13,7 +13,7 @@ function Linechart(){
                     <span>Expenses</span>
                 </d1v>
             </div>
-            <select>
+            <select className="max-sm:w-[25vw]">
                 <option value="2023" key="">2023</option>
                 <option value="2023" key="">2022</option>
                 <option value="2023" key="">2021</option>

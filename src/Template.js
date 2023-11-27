@@ -138,7 +138,7 @@ function Template(){
                                 </li>
                             </ul>
                         </div>
-                        <div id="chat-config" className="flex-col p-4 absolute right-[4vw] top-[10vh] z-[300] bg-white w-[20vw] card hidden">
+                        <div id="chat-config" className="flex-col p-4 absolute right-[4vw] top-[10vh] max-sm:top-[10vw] max-sm:-right-[20vw] z-[300] bg-white w-[20vw] card hidden max-sm:w-[65vw]">
                             <div className="flex flex-col mb-2 border-b-2">
                                 <strong className="text-m">CHAT SETTINGS</strong>
                                 <span className="text-s">Customize your chat experience</span>
@@ -155,7 +155,7 @@ function Template(){
                         <span className="p-1 rounded-full bg-red-600 px-2 text-xs text-white absolute -top-3 max-sm:-top-2 -right-3 max-sm:-right-2">
                             3
                         </span>
-                        <div id="alert-notific" className="py-2 bg-white px-4 text-s absolute text-center w-[40vw] h-[25rem] right-4 top-8 rounded-md language-select z-[200] overflow-y-auto hidden max-sm:w-[90vw] max-sm:-right-24">
+                        <div id="alert-notific" className="py-2 bg-white px-4 text-s absolute text-center w-[40vw] h-[25rem] right-4 top-8 rounded-md language-select z-[200] overflow-y-auto hidden max-sm:w-[90vw] max-sm:-right-[16vw]">
                             <div className="flex justify-between border-b-[1px] py-2">
                                 <span>Notifications</span>
                                 <span className="text-blue-400 font-bold">MARK ALL AS READ</span>

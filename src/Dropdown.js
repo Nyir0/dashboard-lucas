@@ -124,6 +124,8 @@ $(document).on('click', function(e) {
 
     if (!element2.is(e.target) && element2.has(e.target).length === 0) {
         $("#alert-messages").hide("fast");
+        $("#chat-config").hide("fast");
+        $("#chat-setting").removeClass("close-chat-setting");
     }
 
     if (!element3.is(e.target) && element3.has(e.target).length === 0) {
